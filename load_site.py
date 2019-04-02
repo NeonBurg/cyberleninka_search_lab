@@ -285,7 +285,8 @@ def parse_article(article_page_html, article_page_url):
 
         #print('article_title: %s' % title)
     else:
-        print('error: title not found')
+        raise Exception('title not found')
+        #print('error: title not found')
 
     return article_parsed
 
